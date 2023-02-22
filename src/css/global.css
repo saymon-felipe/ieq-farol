@@ -13,3 +13,29 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.header-logo {
+    width: calc(50px + 10vw);
+    max-width: 200px;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+.btn {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-dark {
+    background: #1b1b1b;
+}
+
+.btn-dark:hover {
+    background: #000000;
+}
