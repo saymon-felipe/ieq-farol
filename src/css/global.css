@@ -1,3 +1,10 @@
+:root {
+    --gray: #C6C6C6;
+    --yellow-high: #ffdf99;
+    --red-high: #FF9696;
+    --blue-low: #1D07A4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,4 +45,15 @@ body {
 
 .btn-dark:hover {
     background: #000000;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: calc(1.2rem + 1.2vw);
+}
+
+.__bar-is-vertical {
+    background: rgba(88, 88, 88, 0.7) !important;
+    z-index: 1031;
+    position: relative;
 }

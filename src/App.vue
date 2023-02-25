@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view path="$router.key"></router-view>
+    <vue-scroll>
+      <router-view path="$router.key"></router-view>
+    </vue-scroll>
   </div>
 </template>
 <script>
@@ -12,4 +14,7 @@ export default {
 </script>
 
 <style>
+#app {
+  height: 100vh;
+}
 </style>

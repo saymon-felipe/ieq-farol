@@ -11,10 +11,10 @@
         <div class="collapse navbar-collapse text-right" id="navbarMenu">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Agenda</a>
+                    <a class="nav-link" href="#schedule-container">Agenda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contribua</a>
+                    <a class="nav-link" href="#contribute-container">Contribua</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="ministriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ministérios</a>
@@ -24,10 +24,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galeria</a>
+                    <a class="nav-link" href="#gallery-container">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">A igreja</a>
+                    <a class="nav-link" href="#about-container">A igreja</a>
                 </li>
             </ul>
         </div>
