@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('@/assets/fonts/OpenSans.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --background: #252525;
+    --white: #fff;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Open Sans';
+}
+
+body {
+    background-color: var(--background) !important;
+    color: var(--white) !important;
+    overflow-x: hidden;
+}
+
+.customized-button {
+    padding: 10px 15px;
+    border-radius: 0;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    .customized-button:hover {
+        background: rgba(250, 250, 250, 0.2);
+    }
+
+.button-white {
+    background: white;
+    color: black;
+}
+
+    .button-white:hover {
+        background: rgb(223, 223, 223);
+        border: 2px solid rgb(223, 223, 223);
+    }

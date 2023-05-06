@@ -1,0 +1,33 @@
+<template>
+    <section class="home-hero d-flex align-items-center justify-content-center flex-column">
+        <div class="text-container d-flex align-items-center justify-content-center flex-column">
+            <h1>IEQ FAROL</h1>
+            <p>NOSSA FAMÍLIA</p>
+        </div>
+        <button type="button" class="customized-button button-white">VEJA MAIS</button>
+    </section>
+</template>
+<script>
+export default {
+    name: "homeHero"
+}
+</script>
+<style scoped>
+.home-hero {
+    flex: 1;
+}
+
+.text-container {
+    margin-bottom: 5rem;
+}
+
+.text-container h1 {
+    font-size: calc(3vw + 2rem);
+    font-weight: 400;
+}
+
+.text-container p {
+    font-size: calc(.5vw + .5rem);
+    font-weight: 400;
+}
+</style>
