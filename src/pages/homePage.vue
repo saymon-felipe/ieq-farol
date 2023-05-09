@@ -5,19 +5,22 @@
             <homeHero />
         </div>
         <homeOptions />
+        <footerComponent />
     </div>
 </template>
 <script>
 import headerComponent from "../components/headerComponent.vue";
 import homeHero from "../components/homeHero.vue";
 import homeOptions from "../components/homeOptions.vue";
+import footerComponent from "../components/footerComponent.vue";
 
 export default {
     name: "homePage",
     components: {
         headerComponent,
         homeHero,
-        homeOptions
+        homeOptions,
+        footerComponent
     }
 }
 </script>

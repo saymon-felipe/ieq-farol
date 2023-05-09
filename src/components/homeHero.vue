@@ -18,7 +18,7 @@ export default {
 }
 
 .text-container {
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 
 .text-container h1 {

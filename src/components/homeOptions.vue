@@ -1,5 +1,5 @@
 <template>
-    <section class="home-options d-flex justify-content-center">
+    <section class="home-options d-flex justify-content-center flex-wrap">
         <selectCard title="EVENTOS" subtitle="FIQUE POR DENTRO DOS EVENTOS DA IGREJA" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/event.jpg" />
         <selectCard title="MINISTÉRIOS" subtitle="CONHEÇA OS MINISTÉRIOS DA IGREJA" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/ministries.jpg" />
         <selectCard title="COMO CHEGAR" subtitle="SAIBA AONDE NOS VISITAR" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/gps.png" />
@@ -16,4 +16,11 @@ export default {
 }
 </script>
 <style scoped>
+.home-options {
+    padding: 3rem 1rem;
+    background-image: url('../assets/img/background.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 </style>

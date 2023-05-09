@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="header-content row">
-            <div class="col-8">
+            <div class="col-md-9 col-sm-6">
                 <nav class="navbar navbar-expand-lg" style="margin-top: 12px;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#church-navbar" aria-controls="church-navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
@@ -37,7 +37,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-4 d-flex align-items-center">
+            <div class="col-md-3 col-sm-6 d-flex align-items-center">
                 <button type="button" class="customized-button ml-auto">
                     <i class="fas fa-hand-holding-usd"></i>
                     <span style="font-size: calc(.5vw + .5rem);">CONTRIBUA</span>
