@@ -4,11 +4,16 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import homePage from "../pages/homePage.vue";
+import eventPage from "../pages/eventPage.vue";
 
 const routes = [
     {
         path: "/",
         component: homePage
+    },
+    {
+        path: "/events",
+        component: eventPage
     }
 ];
 

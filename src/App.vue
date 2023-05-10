@@ -6,6 +6,7 @@
 <script>
 import "./css/global.css";
 import './assets/fontawesome/css/all.css';
+import 'animate.css';
 
 export default {
   name: 'App'

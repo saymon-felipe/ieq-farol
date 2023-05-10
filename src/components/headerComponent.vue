@@ -25,7 +25,9 @@
                                 <a href="">CONTRIBUA</a>
                             </li>
                             <li class="header-icon-container">
-                                <img src="../assets/img/icon-white.png" class="head-icon">
+                                <router-link to="/">
+                                    <img src="../assets/img/icon-white.png" class="head-icon" />
+                                </router-link>
                             </li>
                             <li>
                                 <a href="">MINISTÉRIOS</a>
@@ -52,6 +54,11 @@ export default {
 }
 </script>
 <style scoped>
+
+.header {
+    position: relative;
+    z-index: 10;
+}
 .head-icon {
     width: calc(1vw + 30px);
 }
