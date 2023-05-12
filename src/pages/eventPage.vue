@@ -54,33 +54,5 @@ export default {
 }
 </script>
 <style scoped>
-.principal {
-    height: 50vh;
-    background: url("../assets/img/ieq-farol.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-}
 
-    .principal h1, .principal h3 {
-        z-index: 2;
-        position: relative;
-    }
-
-    .principal::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: linear-gradient(transparent, black);
-        z-index: 1;
-        transition: all 0.4s;
-    }
-
-.principal-text {
-    margin: 4rem 0 0 calc(1rem + 5vw);
-}
 </style>

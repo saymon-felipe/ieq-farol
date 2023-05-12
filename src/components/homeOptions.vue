@@ -8,7 +8,9 @@
                 <div class="ministries" v-on:click="openMinistriesContainer()">
                     <selectCard title="MINISTÉRIOS" subtitle="CONHEÇA OS MINISTÉRIOS DA IGREJA" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/ministries.jpg"/>
                 </div>
-                <selectCard title="COMO CHEGAR" subtitle="SAIBA AONDE NOS VISITAR" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/gps.png" />
+                <router-link to="/give">
+                    <selectCard title="COMO CHEGAR" subtitle="SAIBA AONDE NOS VISITAR" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/gps.png" />
+                </router-link>
             </div>
             <div class="ministries-container animate__animated flex-wrap justify-content-center align-items-center">
                 <i class="fas fa-times-circle" v-on:click="closeMinistriesContainer()"></i>

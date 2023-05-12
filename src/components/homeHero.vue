@@ -15,6 +15,8 @@ export default {
 <style scoped>
 .home-hero {
     flex: 1;
+    position: relative;
+    z-index: 4;
 }
 
 .text-container {

@@ -1,6 +1,6 @@
 <template>
     <div class="container d-flex flex-column" id="home-page">
-        <div class="principal">
+        <div class="principal hero">
             <headerComponent />
             <homeHero />
         </div>
