@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-center">
-                        <div class="text-left">
+                        <div class="text-left phrase">
                             <p>Lembrem-se: aquele que semeia pouco também colherá pouco, e aquele que semeia com fartura também colherá fartamente. Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria.</p>
                             <p><strong>2 Coríntios 9:6-7</strong></p>
                         </div>
@@ -99,5 +99,15 @@ export default {
 
 .nu-bank button {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .give-container {
+        margin-bottom: 3rem;
+    }
+
+    .phrase {
+        text-align: center !important;
+    }
 }
 </style>
