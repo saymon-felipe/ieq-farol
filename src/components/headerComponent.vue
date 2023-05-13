@@ -19,10 +19,14 @@
                     <div class="collapse navbar-collapse" id="church-navbar">
                         <ul class="navbar-nav ml-auto">
                             <li>
-                                <a href="">EVENTOS</a>
+                                <router-link to="/events">
+                                    EVENTOS
+                                </router-link>
                             </li>
                             <li>
-                                <a href="">CONTRIBUA</a>
+                                <router-link to="/give">
+                                    CONTRIBUA
+                                </router-link>
                             </li>
                             <li class="header-icon-container">
                                 <router-link to="/">
@@ -30,7 +34,7 @@
                                 </router-link>
                             </li>
                             <li>
-                                <a href="">MINISTÉRIOS</a>
+                                <a href="">PASTORES</a>
                             </li>
                             <li>
                                 <a href="">GALERIA</a>
@@ -40,7 +44,7 @@
                 </nav>
             </div>
             <div class="col-md-3 col-sm-6 d-flex align-items-center">
-                <button type="button" class="customized-button ml-auto">
+                <button type="button" class="customized-button ml-auto" v-on:click="goToGivePage()">
                     <i class="fas fa-hand-holding-usd"></i>
                     <span style="font-size: calc(.5vw + .5rem);">CONTRIBUA</span>
                 </button>
@@ -50,7 +54,12 @@
 </template>
 <script>
 export default {
-    name: "headerComponent"
+    name: "headerComponent",
+    methods: {
+        goToGivePage: function () {
+            this.$router.push("/give");
+        }
+    }
 }
 </script>
 <style scoped>

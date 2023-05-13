@@ -11,8 +11,8 @@
             <div class="p-4">
                 <h3 class="section-title mb-4">INFORMAÇÕES</h3>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="give-container p-4 d-flex">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="give-container p-4 d-flex align-items-center justify-content-around">
                             <div class="nu-bank mr-4">
                                 <img src="../assets/img/nubank-logo.png">
                                 <div class="my-3">
@@ -22,13 +22,13 @@
                                 </div>
                                 <button type="button" v-on:click="copyPIXKey()" id="copy-pix" class="customized-button button-black mt-4">Chave PIX</button>
                             </div>
-                            <div class="pix ml-4 d-flex flex-column align-items-center justify-content-center">
+                            <div class="pix ml-4 d-flex flex-column align-items-center justify-content-start">
                                 <img src="../assets/img/pix-logo.png" class="mb-4">
                                 <img src="../assets/img/qr-code-pix.png">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
                         <div class="text-left phrase">
                             <p>Lembrem-se: aquele que semeia pouco também colherá pouco, e aquele que semeia com fartura também colherá fartamente. Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria.</p>
                             <p><strong>2 Coríntios 9:6-7</strong></p>
@@ -75,14 +75,14 @@ export default {
 .nu-bank img {
     width: 100px;
 }
-
 .pix img:first-child {
     width: 100px;
-    margin: auto;
 }
 
 .pix img:nth-child(2) {
     width: calc(90% - 1rem);
+    min-width: 120px;
+    max-width: 200px;
 }
 
 .give-container {
@@ -101,7 +101,7 @@ export default {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .give-container {
         margin-bottom: 3rem;
     }
