@@ -8,7 +8,7 @@
                 <div class="ministries" v-on:click="openMinistriesContainer()">
                     <selectCard title="MINISTÉRIOS" subtitle="CONHEÇA OS MINISTÉRIOS DA IGREJA" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/ministries.jpg"/>
                 </div>
-                <router-link to="/give">
+                <router-link to="/location">
                     <selectCard title="COMO CHEGAR" subtitle="SAIBA AONDE NOS VISITAR" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/gps.png" />
                 </router-link>
             </div>

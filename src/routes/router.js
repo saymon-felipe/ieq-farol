@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 import homePage from "../pages/homePage.vue";
 import eventPage from "../pages/eventPage.vue";
 import givePage from "../pages/givePage.vue";
+import locationPage from "../pages/locationPage.vue";
 
 const routes = [
     {
@@ -19,6 +20,10 @@ const routes = [
     {
         path: "/give",
         component: givePage
+    },
+    {
+        path: "/location",
+        component: locationPage
     }
 ];
 
