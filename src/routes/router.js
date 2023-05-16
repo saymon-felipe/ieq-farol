@@ -7,6 +7,8 @@ import homePage from "../pages/homePage.vue";
 import eventPage from "../pages/eventPage.vue";
 import givePage from "../pages/givePage.vue";
 import locationPage from "../pages/locationPage.vue";
+import leadershipPage from "../pages/leadershipPage.vue";
+import galleryPage from "../pages/galleryPage.vue";
 
 const routes = [
     {
@@ -24,6 +26,14 @@ const routes = [
     {
         path: "/location",
         component: locationPage
+    },
+    {
+        path: "/leadership",
+        component: leadershipPage
+    },
+    {
+        path: "/gallery",
+        component: galleryPage
     }
 ];
 

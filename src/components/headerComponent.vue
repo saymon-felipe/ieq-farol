@@ -2,12 +2,17 @@
     <header class="header">
         <div class="header-top d-flex justify-content-between py-2 px-4">
             <div class="icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
+                <a href="https://www.facebook.com/profile.php?id=100075583396442" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <i class="fab fa-instagram" style="display: none;"></i>
             </div>
             <div class="tel-container">
                 <i class="fas fa-phone"></i>
-                <span>Fale conosco (41) 9 8409-3742</span>
+                <span>
+                    Fale conosco 
+                    <a href="https://wa.me/5541984093742" target="_blank">(41) 9 8409-3742</a>
+                </span>
             </div>
         </div>
         <div class="header-content row">
@@ -34,10 +39,14 @@
                                 </router-link>
                             </li>
                             <li>
-                                <a href="">PASTORES</a>
+                                <router-link to="/leadership">
+                                    PASTORES
+                                </router-link>
                             </li>
                             <li>
-                                <a href="">GALERIA</a>
+                                <router-link to="/gallery">
+                                    GALERIA
+                                </router-link>
                             </li>
                         </ul>
                     </div>
@@ -80,14 +89,24 @@ export default {
 .header-top i {
     font-size: 20px;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .navbar i {
     color: white;
 }
 
+.icons i {
+    color: white;
+}
+
 .tel-container span {
     margin-left: 10px;
+}
+
+.tel-container span a {
+    margin-left: 5px;
+    color: white;
 }
 
 .customized-button i {
