@@ -14,8 +14,12 @@
             </div>
             <div class="ministries-container animate__animated flex-wrap justify-content-center align-items-center">
                 <i class="fas fa-times-circle" v-on:click="closeMinistriesContainer()"></i>
-                <selectCard title="GMJ" subtitle="GRUPO MISSIONÁRIO DE JOVENS" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/youth.jpeg" />
-                <selectCard title="GMM" subtitle="GRUPO MISSIONÁRIO DE MULHERES" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/womans.jpg" />
+                <router-link to="/ministries/gmj">
+                    <selectCard title="GMJ" subtitle="GRUPO MISSIONÁRIO DE JOVENS" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/youth.jpeg" />
+                </router-link>
+                <router-link to="/ministries/gmm">
+                    <selectCard title="GMM" subtitle="GRUPO MISSIONÁRIO DE MULHERES" background="https://ieq-farol-bucket.s3.sa-east-1.amazonaws.com/womans.jpg" />
+                </router-link>
             </div>
         </optionsBackground>
     </section>

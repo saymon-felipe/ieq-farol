@@ -1,5 +1,6 @@
 <template>
-    <div class="select-card" :style="'background-image: url(' + background + ')'">
+    <div class="select-card" :style="'background-image: url(' + background + ')'" :class="cardAlign == 'left' ? 'align-items-start' : ''">
+        <h6>{{ subtitle2 }}</h6>
         <h4>{{ title }}</h4>
         <h6>{{ subtitle }}</h6>
     </div>
@@ -7,7 +8,7 @@
 <script>
 export default {
     name: "selectCard",
-    props: ["title", "subtitle", "background"]
+    props: ["title", "subtitle", "background", "subtitle2", "cardAlign"]
 }
 </script>
 <style scoped>
@@ -24,7 +25,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: .5rem;
+    padding: .7rem;
     cursor: pointer;
 }
 

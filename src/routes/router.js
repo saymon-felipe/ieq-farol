@@ -9,6 +9,8 @@ import givePage from "../pages/givePage.vue";
 import locationPage from "../pages/locationPage.vue";
 import leadershipPage from "../pages/leadershipPage.vue";
 import galleryPage from "../pages/galleryPage.vue";
+import gmjPage from "../pages/gmjPage.vue";
+import gmmPage from "../pages/gmmPage.vue";
 
 const routes = [
     {
@@ -34,6 +36,14 @@ const routes = [
     {
         path: "/gallery",
         component: galleryPage
+    },
+    {
+        path: "/ministries/gmj",
+        component: gmjPage
+    },
+    {
+        path: "/ministries/gmm",
+        component: gmmPage
     }
 ];
 

@@ -8,7 +8,7 @@
             </div>
         </div>
         <optionsBackground>
-            <div class="d-flex flex-column justify-content-center w-100 align-items-center">
+            <div class="d-flex flex-column justify-content-center w-100 align-items-start p-4">
                 <div class="text">
                     <h3 class="section-title mb-4">COMO CHEGAR</h3>
                 </div>
@@ -21,7 +21,6 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            
         </optionsBackground>
         <footerComponent />
     </div>
@@ -42,7 +41,7 @@ export default {
 </script>
 <style scoped>
 .map-container {
-    width: 90%;
+    width: 100%;
     height: 50vh;
 }
 
@@ -50,8 +49,4 @@ export default {
         width: 100%;
         height: 100%;
     }
-
-.text {
-    width: 90%;
-}
 </style>

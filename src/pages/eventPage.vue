@@ -8,8 +8,12 @@
             </div>
         </div>
         <optionsBackground>
-            <h3 class="section-title mb-4">PROGRAMAÇÃO</h3>
-            <selectCard v-for="(event, index) in events" v-bind:key="index" :title="event.event_name" :subtitle="event.event_description" :background="event.event_image" />
+            <div class="w-100 p-4">
+                <h3 class="section-title mb-4">PROGRAMAÇÃO</h3>
+                <div class="d-flex flex-wrap">
+                    <selectCard v-for="(event, index) in events" v-bind:key="index" :title="event.event_name" :subtitle="event.event_description" :background="event.event_image" />
+                </div>
+            </div>
         </optionsBackground>
         <footerComponent />
     </div>
