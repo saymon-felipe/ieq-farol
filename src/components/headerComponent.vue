@@ -1,22 +1,22 @@
 <template>
     <header class="header">
         <div class="header-top d-flex justify-content-between py-2 px-4">
-            <div class="icons">
+            <div class="icons d-flex align-items-center">
                 <a href="https://www.facebook.com/profile.php?id=100075583396442" target="_blank">
                     <i class="fab fa-facebook"></i>
                 </a>
                 <i class="fab fa-instagram" style="display: none;"></i>
             </div>
-            <div class="tel-container">
+            <div class="tel-container text-center">
                 <i class="fas fa-phone"></i>
                 <span>
                     Fale conosco 
-                    <a href="https://wa.me/5541984093742" target="_blank">(41) 9 8409-3742</a>
+                    <a href="https://wa.me/5541984093742" target="_blank" style="white-space: nowrap;">(41) 9 8409-3742</a>
                 </span>
             </div>
         </div>
         <div class="header-content row">
-            <div class="col-md-9 col-sm-6">
+            <div class="col-md-9 col-5">
                 <nav class="navbar navbar-expand-lg" style="margin-top: 12px;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#church-navbar" aria-controls="church-navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
@@ -24,27 +24,27 @@
                     <div class="collapse navbar-collapse" id="church-navbar">
                         <ul class="navbar-nav ml-auto">
                             <li>
-                                <router-link to="/events">
+                                <router-link to="/events" class="scroll-top">
                                     EVENTOS
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/give">
+                                <router-link to="/give" class="scroll-top">
                                     CONTRIBUA
                                 </router-link>
                             </li>
                             <li class="header-icon-container">
-                                <router-link to="/">
+                                <router-link to="/" class="scroll-top">
                                     <img src="../assets/img/icon-white.png" class="head-icon" />
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/leadership">
+                                <router-link to="/leadership" class="scroll-top">
                                     PASTORES
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/gallery">
+                                <router-link to="/gallery" class="scroll-top">
                                     GALERIA
                                 </router-link>
                             </li>
@@ -52,7 +52,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-md-3 col-sm-6 d-flex align-items-center">
+            <div class="col-md-3 col-7 d-flex align-items-center">
                 <button type="button" class="customized-button ml-auto" v-on:click="goToGivePage()">
                     <i class="fas fa-hand-holding-usd"></i>
                     <span style="font-size: calc(.5vw + .5rem);">CONTRIBUA</span>

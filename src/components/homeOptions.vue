@@ -1,5 +1,5 @@
 <template>
-    <section class="home-options">
+    <section class="home-options" id="options">
         <optionsBackground>
             <div class="default-container animate__animated flex-wrap justify-content-center align-items-center">
                 <router-link to="/events">

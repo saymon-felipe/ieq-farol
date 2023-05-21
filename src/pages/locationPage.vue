@@ -8,7 +8,7 @@
             </div>
         </div>
         <optionsBackground>
-            <div class="d-flex flex-column justify-content-center w-100 align-items-start p-4">
+            <div class="d-flex flex-column justify-content-center w-100 align-items-start">
                 <div class="text">
                     <h3 class="section-title mb-4">COMO CHEGAR</h3>
                 </div>

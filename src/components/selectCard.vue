@@ -17,8 +17,10 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 275px;
-    height: 144px;
+    min-width: 225px;
+    width: 70vw;
+    max-width: 300px;
+    height: 160px;
     margin: 10px;
     display: flex;
     align-items: center;

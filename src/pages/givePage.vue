@@ -8,11 +8,11 @@
             </div>
         </div>
         <optionsBackground>
-            <div class="p-4">
-                <h3 class="section-title mb-4">INFORMAÇÕES</h3>
+            <div class="gmj-events d-flex flex-wrap flex-column">
+                <h3 class="section-title mb-4 ml-2">INFORMAÇÕES</h3>
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="give-container p-4 d-flex align-items-center justify-content-around">
+                    <div class="col-lg-6 col-12">
+                        <div class="give-container p-4 d-flex align-items-center justify-content-around flex-wrap">
                             <div class="nu-bank mr-4">
                                 <img src="../assets/img/nubank-logo.png">
                                 <div class="my-3">
@@ -28,14 +28,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                    <div class="col-lg-6 col-12 d-flex align-items-center">
                         <div class="text-left phrase">
                             <p>Lembrem-se: aquele que semeia pouco também colherá pouco, e aquele que semeia com fartura também colherá fartamente. Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria.</p>
                             <p><strong>2 Coríntios 9:6-7</strong></p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+            
         </optionsBackground>
         <footerComponent />
     </div>
@@ -108,6 +109,26 @@ export default {
 
     .phrase {
         text-align: center !important;
+    }
+}
+
+@media (max-width: 504px) {
+    .give-container {
+        justify-content: center !important;
+    }
+
+    .nu-bank {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .pix {
+        align-items: flex-start !important;
+    }
+
+    .nu-bank, .pix {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 </style>

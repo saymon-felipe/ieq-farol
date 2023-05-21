@@ -4,7 +4,7 @@
             <h1>IEQ FAROL</h1>
             <p>NOSSA FAMÍLIA</p>
         </div>
-        <button type="button" class="customized-button button-white">VEJA MAIS</button>
+        <a href="#options" class="customized-button button-white">VEJA MAIS</a>
     </section>
 </template>
 <script>

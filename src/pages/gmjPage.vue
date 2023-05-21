@@ -7,15 +7,13 @@
                 <h3>Grupo missionário de jovens</h3>
             </div>
         </div>
-        <optionsBackground>       
-            <div class="p-4 w-100">
-                <div class="text">
-                    <h3 class="section-title mb-4">PROGRAMAÇÃO</h3>
-                </div>
-                <div class="gmj-events d-flex flex-wrap">
+        <optionsBackground>      
+            <div class="gmj-events d-flex flex-wrap flex-column">
+                <h3 class="section-title mb-4 ml-2">PROGRAMAÇÃO</h3>
+                <div class="d-flex justify-content-center flex-wrap">
                     <selectCard v-for="(event, index) in events" v-bind:key="index" :subtitle2="event.subtitle2" :title="event.title" :subtitle="event.subtitle" :cardAlign="event.cardAlign" :background="event.background" />
                 </div>
-            </div>     
+            </div> 
         </optionsBackground>
         <footerComponent />
     </div>

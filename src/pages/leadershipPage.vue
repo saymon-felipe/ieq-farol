@@ -8,7 +8,7 @@
             </div>
         </div>
         <optionsBackground>       
-            <div class="p-4">
+            <div>
                 <div class="text">
                     <h3 class="section-title mb-4">PASTORES TITULARES</h3>
                 </div>

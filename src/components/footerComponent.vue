@@ -15,9 +15,11 @@
                 </form>
             </div>
         </div>
-        <div class="footer-container d-flex align-items-center justify-content-between pb-4 pt-2 border-bottom mb-4">
+        <div class="footer-container d-flex align-items-center justify-content-between pb-4 pt-2 border-bottom mb-4 flex-wrap">
             <div class="footer-informations d-flex flex-column">
-                <img src="../assets/img/logo-white.png" class="footer-logo mb-4">
+                <router-link to="/" class="scroll-top">
+                    <img src="../assets/img/logo-white.png" class="footer-logo mb-4" />
+                </router-link>
                 <strong><p>IGREJA DO EVANGELHO QUADRANGULAR</p></strong>
                 <span>RUA JOÃO MENDONÇA 50</span>
                 <span>CAPÃO DA IMBUIA, CURITIBA - PR</span>
@@ -27,16 +29,27 @@
             <div class="footer-links d-flex flex-wrap">
                 <div class="footer-group mx-4 d-flex flex-column">
                     <p>IEQ FAROL</p>
-                    <span>Sobre</span>
-                    <span>Pastores</span>
-                    <span>Doar</span>
-                    <span>Ministérios</span>
+                    <router-link to="/leadership" class="scroll-top">
+                        <span>Pastores</span>
+                    </router-link>
+                    <router-link to="/give" class="scroll-top">
+                        <span>Doar</span>
+                    </router-link>
+                    <router-link to="/ministries/gmj" class="scroll-top">
+                        <span>Ministérios | GMJ</span>
+                    </router-link>
+                    <router-link to="/ministries/gmm" class="scroll-top">
+                        <span>Ministérios | GMM</span>
+                    </router-link>
                 </div>
                 <div class="footer-group mx-4 d-flex flex-column">
                     <p>RECURSOS</p>
-                    <span>Eventos</span>
-                    <span>Email</span>
-                    <span>Como chegar</span>
+                    <router-link to="/events" class="scroll-top">
+                        <span>Eventos</span>
+                    </router-link>                    
+                    <router-link to="/location" class="scroll-top">
+                        <span>Como chegar</span>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -56,11 +69,18 @@
     </footer>
 </template>
 <script>
+import $ from 'jquery';
+
 export default {
     name: "footerComponent",
     methods: {
         subscribeNewsletter: function () {
-
+            let container = $(".newsletter-input");
+            let content = container.html();
+            container.html("<span class='mt-4 text-center d-block'>Obrigado!</span>");
+            setTimeout(() => {
+                container.html(content);
+            }, 3000)
         }
     }
 }
@@ -88,6 +108,7 @@ footer {
 }
 
 .footer-group span, .footer-group a, .footer-signature span, .footer-signature a {
+    color: white;
     font-size: .8rem;
 }
 
@@ -100,6 +121,15 @@ footer {
     .footer-signature {
         justify-content: center !important;
     }
+
+    .footer-group {
+        margin-left: 0 !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -109,6 +139,18 @@ footer {
 
     .newsletter-input form button {
         margin: 10px 0;
+    }
+
+    .newsletter-container i {
+        display: none;
+    }
+
+    .newsletter-text {
+        margin: 0 !important;
+    }
+
+    .footer-signature {
+        text-align: center;
     }
 }
 </style>
