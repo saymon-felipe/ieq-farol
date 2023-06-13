@@ -55,8 +55,10 @@
         </div>
         <div class="footer-signature d-flex align-items-center justify-content-between flex-wrap">
             <div class="icons m-2">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
+                <a href="https://www.facebook.com/profile.php?id=100075583396442" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <i class="fab fa-instagram" style="display: none;"></i>
             </div>
             <div class="signature d-flex align-items-center justify-content-center flex-column m-2">
                 <span>&copy; 2023 IEQ Farol. Todos os direitos reservados.</span>
